@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/first"
+        android:title="第一页"
+        android:icon="@drawable/baseline_home_24">
+    </item>
+
+    <item
+        android:id="@+id/second"
+        android:title="第二页"
+        android:icon="@drawable/baseline_smoking_rooms_24">
+    </item>
+
+    <item
+        android:id="@+id/thrid"
+        android:title="第三页"
+        android:icon="@drawable/baseline_people_24">
+    </item>
+</menu>

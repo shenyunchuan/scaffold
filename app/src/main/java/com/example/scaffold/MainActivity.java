@@ -2,6 +2,7 @@ package com.example.scaffold;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button three;
     private Button four;
     private Button five;
+    private Button btn_navigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         three = findViewById(R.id.three);
         four = findViewById(R.id.four);
         five = findViewById(R.id.five);
+        btn_navigation = findViewById(R.id.btn_navigation);
 
         //普通对话框
         one.setOnClickListener(new View.OnClickListener() {
@@ -166,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 View inflate = LayoutInflater.from(MainActivity.this).inflate(R.layout.dialogfive, null);
                 EditText text1 = inflate.findViewById(R.id.text1);
-                EditText btn1 = inflate.findViewById(R.id.btn1);
+                Button btn1 = inflate.findViewById(R.id.btn1);
                 btn1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -177,6 +180,15 @@ public class MainActivity extends AppCompatActivity {
                         .setTitle("请输入")
                         .setView(inflate)
                         .show();
+            }
+        });
+
+        //点击跳转至导航栏activity
+        btn_navigation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,NavigationActivity.class);
+                startActivity(intent);
             }
         });
 

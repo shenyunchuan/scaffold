@@ -1,8 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Scaffold" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Theme.Material3.DayNight.NoActionBar -->
+    <!-- 使用这个可以点击变色 Theme.MaterialComponents.Light.NoActionBar -->
+    <style name="Base.Theme.Scaffold" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/my_light_primary</item>
+
+        <!-- 加上这些属性变色效果-->
+        <item name="colorPrimaryVariant">@color/my_light_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
     </style>
 
     <style name="Theme.Scaffold" parent="Base.Theme.Scaffold" />
