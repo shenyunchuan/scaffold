@@ -49,7 +49,7 @@ public class NavigationActivity extends AppCompatActivity {
         });
 
     }
-
+    //定义selectedFragment方法，选中哪个bottomNavigationView就将哪个fragment添加进去呈现
     private void selectedFragment(int positon) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         hiadeFragment(fragmentTransaction);
@@ -78,6 +78,7 @@ public class NavigationActivity extends AppCompatActivity {
         //提交，一定要
         fragmentTransaction.commit();
     }
+    //把fragment全部隐藏
     private void hiadeFragment(FragmentTransaction fragmentTransaction){
         if (firstFragment!=null){
             fragmentTransaction.hide(firstFragment);
