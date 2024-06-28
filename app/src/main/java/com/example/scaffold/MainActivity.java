@@ -16,6 +16,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.scaffold.CommonDialog.CommonDialog;
+
 
 public class MainActivity extends AppCompatActivity {
     private Button one;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Button three;
     private Button four;
     private Button five;
+    private Button six;
     private Button btn_navigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         three = findViewById(R.id.three);
         four = findViewById(R.id.four);
         five = findViewById(R.id.five);
+        six = findViewById(R.id.six);
         btn_navigation = findViewById(R.id.btn_navigation);
 
         //普通对话框
@@ -180,6 +184,22 @@ public class MainActivity extends AppCompatActivity {
                         .setTitle("请输入")
                         .setView(inflate)
                         .show();
+            }
+        });
+
+
+        //自定义对话框
+        six.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CommonDialog dialog = new CommonDialog(MainActivity.this);
+                dialog.setOncommonCilckListener(new CommonDialog.OncommonCilckListener() {
+                    @Override
+                    public void onClick() {
+                        Toast.makeText(MainActivity.this, "点击了dialog中的按钮", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                dialog.show();
             }
         });
 

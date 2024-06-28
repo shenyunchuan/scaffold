@@ -36,6 +36,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
+        android:id="@+id/six"
+        android:text="点击实现自定义对话框"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
         android:id="@+id/btn_navigation"
         android:layout_marginTop="50dp"
         android:text="点击跳转至底部导航栏"
