@@ -4,12 +4,15 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
+    <!--EditText中最后两行实现输入后小键盘右下角成为搜索，必须单行显示-->
     <EditText
         android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"

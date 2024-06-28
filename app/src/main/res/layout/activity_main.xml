@@ -48,5 +48,10 @@
         android:text="点击跳转至底部导航栏"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_tablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击跳转至tablayout"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

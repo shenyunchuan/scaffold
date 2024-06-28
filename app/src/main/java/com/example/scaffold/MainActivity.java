@@ -10,13 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.example.scaffold.CommonDialog.CommonDialog;
+import com.example.scaffold.Dialog.CommonDialog;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button five;
     private Button six;
     private Button btn_navigation;
+    private Button btn_tablayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         five = findViewById(R.id.five);
         six = findViewById(R.id.six);
         btn_navigation = findViewById(R.id.btn_navigation);
+        btn_tablayout = findViewById(R.id.btn_tablayout);
 
         //普通对话框
         one.setOnClickListener(new View.OnClickListener() {
@@ -208,6 +206,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,NavigationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //点击跳转至tablayoutactivity
+        btn_tablayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,TablayoutActivity.class);
                 startActivity(intent);
             }
         });
