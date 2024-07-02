@@ -44,13 +44,13 @@ public class Tablayoutviewpager2Activity extends AppCompatActivity {
 
             }
         });
+
         viewpager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                super.onPageScrolled(position, positionOffset, positionOffsetPixels);
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
                 tablayout.getTabAt(position).select();
             }
         });
-
     }
 }
