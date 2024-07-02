@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button six;
     private Button btn_navigation;
     private Button btn_tablayout;
+    private Button btn_tablayout_viewpager2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         six = findViewById(R.id.six);
         btn_navigation = findViewById(R.id.btn_navigation);
         btn_tablayout = findViewById(R.id.btn_tablayout);
+        btn_tablayout_viewpager2 = findViewById(R.id.btn_tablayout_viewpager2);
 
         //普通对话框
         one.setOnClickListener(new View.OnClickListener() {
@@ -215,6 +217,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,TablayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+        //点击跳转至tablayout+viewpager2
+        btn_tablayout_viewpager2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Tablayoutviewpager2Activity.class);
                 startActivity(intent);
             }
         });
