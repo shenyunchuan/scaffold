@@ -58,5 +58,15 @@
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:text="点击跳转至tablayout+viewpager2"/>
+ <Button
+     android:id="@+id/shezhi"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="设置"/>
+ <Button
+     android:id="@+id/mine"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="个人中心"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

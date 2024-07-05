@@ -12,6 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scaffold"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="design_in_dp"
+            android:value="375" />
+        <meta-data
+            android:name="design_hight_dp"
+            android:value="667" />
+
+        <activity
+            android:name=".MineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShezhiActivity"
+            android:exported="false" />
         <activity
             android:name=".Tablayoutviewpager2Activity"
             android:exported="false" />

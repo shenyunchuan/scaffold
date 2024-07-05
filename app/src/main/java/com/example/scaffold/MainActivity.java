@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_navigation;
     private Button btn_tablayout;
     private Button btn_tablayout_viewpager2;
+    private Button shezhi;
+    private Button mine;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         btn_navigation = findViewById(R.id.btn_navigation);
         btn_tablayout = findViewById(R.id.btn_tablayout);
         btn_tablayout_viewpager2 = findViewById(R.id.btn_tablayout_viewpager2);
+        shezhi = findViewById(R.id.shezhi);
+        mine = findViewById(R.id.mine);
 
         //普通对话框
         one.setOnClickListener(new View.OnClickListener() {
@@ -225,6 +229,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,Tablayoutviewpager2Activity.class);
+                startActivity(intent);
+            }
+        });
+        shezhi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ShezhiActivity.class);
+                startActivity(intent);
+            }
+        });
+        mine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MineActivity.class);
                 startActivity(intent);
             }
         });
