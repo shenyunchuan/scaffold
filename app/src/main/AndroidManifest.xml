@@ -13,6 +13,10 @@
         android:theme="@style/Theme.Scaffold"
         tools:targetApi="31">
 
+        <activity
+            android:name=".DownloadinviteActivity"
+            android:exported="false" />
+
         <meta-data
             android:name="design_in_dp"
             android:value="375" />
