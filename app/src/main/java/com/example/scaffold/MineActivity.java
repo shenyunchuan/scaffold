@@ -17,6 +17,7 @@ import com.example.scaffold.Dialog.InviteDialog;
 public class MineActivity extends AppCompatActivity {
     private RelativeLayout invite;
     private RelativeLayout download;
+    private RelativeLayout question;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -25,6 +26,7 @@ public class MineActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mine);
         invite = findViewById(R.id.invite);
         download = findViewById(R.id.download);
+        question = findViewById(R.id.question);
 
       invite.setOnClickListener(new View.OnClickListener() {
           @Override
@@ -40,5 +42,12 @@ public class MineActivity extends AppCompatActivity {
               startActivity(intent);
           }
       });
+        question.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MineActivity.this, QuestionAnswersActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
