@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Scaffold"
         tools:targetApi="31">
         <activity
+            android:name=".CommonrecyleviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".QuestionAnswersActivity"
             android:exported="false" />
         <activity

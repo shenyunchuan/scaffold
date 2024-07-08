@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_tablayout_viewpager2;
     private Button shezhi;
     private Button mine;
+    private Button commonrecyleview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         btn_tablayout_viewpager2 = findViewById(R.id.btn_tablayout_viewpager2);
         shezhi = findViewById(R.id.shezhi);
         mine = findViewById(R.id.mine);
+        commonrecyleview = findViewById(R.id.commonrecyleview);
 
         //普通对话框
         one.setOnClickListener(new View.OnClickListener() {
@@ -243,6 +245,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MineActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        commonrecyleview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,CommonrecyleviewActivity.class);
                 startActivity(intent);
             }
         });
