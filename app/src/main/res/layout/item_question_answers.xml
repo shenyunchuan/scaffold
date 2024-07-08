@@ -38,10 +38,10 @@
             <ImageView
                 android:rotation="0"
                 android:id="@+id/arrow"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
                 android:src="@drawable/ic_qa_down"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="13dp"
                 android:layout_alignParentRight="true" />
         </RelativeLayout>
