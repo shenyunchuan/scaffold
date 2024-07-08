@@ -62,7 +62,6 @@ public class QuestionAnswersActivity extends AppCompatActivity {
         questionAnswerAdapter.setRecyclerItemClickListener(new QuestionAnswerAdapter.OnRecyclerItemClickListener() {
             @Override
             public void onRecyclerItemClick(int position) {
-
             }
         });
 
